@@ -6,5 +6,5 @@ export default defineConfig({
   server: {
     port: 5556,
   },
-  base: "/FoodLensAI/",
+  base: process.env.VITE_BASE_URL || "/",
 });

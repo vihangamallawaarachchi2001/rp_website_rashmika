@@ -7,7 +7,8 @@ import TehanImage from "../assets/Tehan.png";
 import samadhiImage from "../assets/Samadhi.jpeg";
 import nelumImage from "../assets/Nelum.jpeg";
 import sudathImage from "../assets/Sudath.png";
-
+import WishalyaMadamImage from "../assets/WishalyaMadamImage.png"
+import JennyMadamImage from "../assets/JennyMadamImage.png"
 const people = [
   {
     name: "Rashmika Rupasinghe",
@@ -45,15 +46,15 @@ const people = [
     linkedInUrl: "https://www.linkedin.com/in/tehannimsitha/",
     email: "IT22193872@my.sliit.lk",
   },
-  /*{
-    name: "Mr. Samadhi Rathnayake",
+  {
+    name: "Mr. Wishalya Tissera",
     title: "Supervisor",
     organization: "Sri Lanka Institute of Information Technology",
     department: "Information Technology",
-    imageUrl: samadhiImage,
-    linkedInUrl: "https://www.linkedin.com/in/samadhi-chathuranga-rathnayake/",
-    email: "samadhi.r@sliit.lk",
-  },*/
+    imageUrl: WishalyaMadamImage,
+    linkedInUrl: "https://www.linkedin.com/in/wishalya-tissera/",
+    email: "wishalyatissera@gmail.com",
+  },
   {
     name: "Mr. Samadhi Rathnayake",
     title: "Co-Supervisor",
@@ -64,15 +65,15 @@ const people = [
       "https://www.linkedin.com/in/nelum-chathuranga-amarasena-703a66176/",
     email: "samadhi.r@sliit.lk",
   },
-  /*{
-    name: "Mr. Sudath Hewadeva",
-    title: "External Supervisor",
-    organization: "Mahaweli Authority, Sri Lanka",
-    department: "Civil Engineering",
-    imageUrl: sudathImage,
-    linkedInUrl: "https://www.linkedin.com/in/sudath-kumara-hewadewa-0a00888a/",
-    email: "",
-  },*/
+  {
+    name: "Ms.Jenny Krishara",
+    title: "Supervisor",
+    organization: "Sri Lanka Institute of Information Technology",
+    department: "Information Technology",
+    imageUrl: JennyMadamImage,
+    linkedInUrl: "https://www.linkedin.com/in/jenny-krishara-1a09a0111/",
+    email: "jenny.k@sliit.lk",
+  },
 ];
 
 const TeamMember = ({ person }) => (

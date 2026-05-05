@@ -9,6 +9,7 @@ import {
   Bars3Icon,
   XMarkIcon,
   ChevronDownIcon,
+  MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
 import Logo from "../assets/favicon.ico";
 
@@ -45,6 +46,7 @@ const navigation = [
 const Header = () => {
   const [current, setCurrent] = useState("#home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const isCurrent = (item) => {
     if (item.href === current) return true;
@@ -145,6 +147,16 @@ const Header = () => {
                   )}
                 </div>
               ))}
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="bg-gray-100 text-gray-700 rounded-md px-3 py-2 text-sm font-medium border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600"
+                />
+                <MagnifyingGlassIcon className="absolute right-2 top-2.5 h-5 w-5 text-gray-500 pointer-events-none" />
+              </div>
             </div>
           </div>
           <div className="flex md:hidden">
@@ -186,6 +198,20 @@ const Header = () => {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
+              <div className="space-y-2 py-6">
+                <div className="px-3">
+                  <div className="relative">
+                    <input
+                      type="text"
+                      placeholder="Search..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className="w-full bg-gray-100 text-gray-700 rounded-md px-3 py-2 text-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600"
+                    />
+                    <MagnifyingGlassIcon className="absolute right-5 top-2.5 h-5 w-5 text-gray-500 pointer-events-none" />
+                  </div>
+                </div>
+              </div>
               <div className="space-y-1 py-6">
                 {navigation.map((item) => (
                   <Disclosure as="div" key={item.name} className="-mx-3">

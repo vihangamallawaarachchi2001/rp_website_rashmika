@@ -15,20 +15,20 @@ const posts = [
     downloadLink:
       'https://drive.google.com/drive/folders/12tzdkCiwB_TwjCikYQgqeVVPMQpl9H5t?usp=sharing',
   },
-  /*{
-    title: 'Status Document I',
-    submittedOn: '2024/07/05',
+  {
+    title: 'Checklist I',
+    submittedOn: '2026/01/11',
     type: 'group',
     downloadLink:
-      'https://drive.google.com/drive/folders/1qmnKMCTs0Uf3MlHmpU9vmGyXJm9Cr1mv?usp=sharing',
+      'https://drive.google.com/drive/folders/1P-Sinb9AD-d_BqMgatALMS57wx_LmzDV?usp=sharing',
   },
   {
-    title: 'Status Document II',
-    submittedOn: '2024/08/30',
+    title: 'Checklist II',
+    submittedOn: '2026/04/30',
     type: 'group',
     downloadLink:
-      'https://drive.google.com/drive/folders/1rm5HDsPUQV7DdadiIz-F_HMlDj-0RiUs?usp=sharing',
-  },*/
+      'https://drive.google.com/drive/folders/1qPjLprAqKIzDDWmY-DsRSWO18JW6zOS6?usp=sharing',
+  },
   {
     title: 'Research Paper',
     submittedOn: '2026/04/15',
